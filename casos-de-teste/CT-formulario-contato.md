@@ -144,10 +144,11 @@
 
 **Resultado Esperado:** Mensagem de validação — ex: `"O campo Nome é obrigatório"`
 
-**Resultado Obtido:** Sistema bloqueou o envio e exibiu a mensagem genérica:
-"One or more fields have an error. Please check and try again."
-A mensagem não especifica qual campo está incorreto e está em inglês,
-em um site totalmente em português.
+**Resultado Obtido:** Sistema bloqueou o envio e exibiu duas mensagens:
+mensagem específica abaixo do campo Nome ("The field is required.")
+e mensagem geral abaixo do botão Enviar ("One or more fields have
+an error. Please check and try again."). Ambas as mensagens estão
+em inglês, em um site totalmente em português.
 
 **Status:** ✅ Passou (com observação)
 

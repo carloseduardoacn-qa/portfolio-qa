@@ -144,7 +144,12 @@
 
 **Resultado Esperado:** Mensagem de validação — ex: `"O campo Nome é obrigatório"`
 
-**Resultado Obtido:** A verificar
+**Resultado Obtido:** Sistema bloqueou o envio e exibiu a mensagem genérica:
+"One or more fields have an error. Please check and try again."
+A mensagem não especifica qual campo está incorreto e está em inglês,
+em um site totalmente em português.
+
+**Status:** ✅ Passou (com observação)
 
 **Status:** 🔲 Não executado
 

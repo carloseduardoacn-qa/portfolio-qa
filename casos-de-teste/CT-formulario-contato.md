@@ -151,8 +151,6 @@ em um site totalmente em português.
 
 **Status:** ✅ Passou (com observação)
 
-**Status:** 🔲 Não executado
-
 ---
 
 ### CT-005 — Envio sem preencher o campo Telefone

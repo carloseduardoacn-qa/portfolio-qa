@@ -1,10 +1,10 @@
-md_content = """# [BUG] App InterBusiness congela e impede avanço na habilitação do recurso Tap to Pay
+BR-003 - App InterBusiness congela e impede avanço na habilitação do recurso Tap to Pay
 
 ## Informações Gerais
 
 | Campo | Detalhe |
 | :--- | :--- |
-| **ID** | BR-002 |
+| **ID** | BR-003 |
 | **Título** | App InterBusiness congela e impede avanço na habilitação do Tap to Pay |
 | **Reportado por** | QA Tester (Portfólio) |
 | **Data do Teste** | 09/08/2026 |

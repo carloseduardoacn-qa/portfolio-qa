@@ -1,87 +1,47 @@
-# BR-002 — Apple Wallet: "Enter Password" button does not respond
+# [BUG] Botão "Enter Password" não responde ao toque e não exibe feedback visual na Apple Wallet após Modo Perdido
 
-| Field | Details |
-|---|---|
-| **Bug ID** | BR-002 |
-| **Title** | Apple Wallet "Enter Password" button does not respond |
-| **Severity** | Medium |
-| **Priority** | Medium |
-| **Environment** | iPhone 13 — iOS 26.5.2 |
-| **Application** | Apple Wallet |
-| **Language** | English |
-| **Connection** | Wi-Fi |
+## 1. Descrição do Problema
+Ao tentar reativar os cartões na Apple Wallet após desativar o **Lost Mode** (Modo Perdido), a interface exibe a mensagem de alerta `"Apple Account Verification Required"`. No entanto, ao clicar no botão **"Enter Password"**, o aplicativo **não responde ao comando (unresponsive UI)**, não abre a tela de autenticação da Apple Account e **não exibe nenhuma mensagem de erro ou feedback ao usuário**, travando o fluxo de recuperação do Apple Pay.
 
 ---
 
-## Description
-
-The **"Enter Password"** button displayed on the Apple Wallet verification screen does not respond when tapped.
-
-The issue was observed after the iPhone had previously been placed in **Lost Mode** and subsequently removed from Lost Mode.
-
----
-
-## Preconditions
-
-- Payment cards are already added to Apple Wallet.
-- The device was previously placed in Lost Mode.
-- The device has subsequently exited Lost Mode.
-- Apple Wallet displays the **"Apple Account Verification Required"** screen.
+## 2. Passos para Reprodução
+1. Marque o dispositivo como perdido via Buscar (Find My) ativando o **Lost Mode**.
+2. Desative o **Lost Mode** através do painel de gerenciamento do iCloud.
+3. Abra o aplicativo **Apple Wallet** no dispositivo.
+4. Selecione um cartão suspenso (ex: PicPay Mastercard final 7039).
+5. No banner de alerta `"Apple Account Verification Required"`, toque no botão **"Enter Password"**.
+6. Observe que o botão não executa nenhuma ação e o sistema permanece estático.
 
 ---
 
-## Steps to Reproduce
-
-1. Open **Apple Wallet**.
-2. Wait for the **"Apple Account Verification Required"** screen to appear.
-3. Tap **"Enter Password"**.
-4. Observe the behavior.
+## 3. Comportamento Esperado
+Ao tocar no botão **"Enter Password"**, o sistema operacional deveria abrir imediatamente a modal/prompt do sistema para digitação da senha da Apple Account (ou autenticação biométrica Face ID/Touch ID) para reativar os cartões. Caso ocorra uma falha de conexão ou autenticação, o aplicativo deveria exibir uma mensagem de erro clara.
 
 ---
 
-## Expected Result
-
-The **"Enter Password"** button should respond to the tap and initiate the Apple Account authentication flow.
-
----
-
-## Actual Result
-
-The **"Enter Password"** button does not respond when tapped.
-
-- No authentication screen is displayed.
-- No error message is shown.
-- No visual feedback indicates that the button was activated.
+## 4. Comportamento Atual
+O botão **"Enter Password"** é completamente inativo ao toque (*unresponsive*). Nenhuma janela de autenticação é aberta, nenhum spinner de carregamento é exibido e nenhuma mensagem de erro ou feedback visual/sonoro é apresentado ao usuário, mantendo os cartões permanentemente bloqueados.
 
 ---
 
-## Reproducibility
-
-**100%** under the observed conditions.
-
----
-
-## Impact
-
-The user cannot proceed with the Apple Account verification flow through the provided **"Enter Password"** action, potentially preventing normal access to Apple Wallet functionality.
+## 5. Severidade e Impacto
+* **Severidade:** Alta / Crítica (Bloqueio de funcionalidade principal)
+* **Impacto:** Impedimento total do uso do Apple Pay para pagamentos por aproximação (NFC) e gestão de carteira após recuperação de dispositivo perdido, sem alternativas para o usuário dentro do app.
 
 ---
 
-## Evidence
-
-- **Video:** [Loom](LOOM_LINK)
-- **Screenshots:** Included in the repository
-
----
-
-## Additional Notes
-
-The issue was first observed after the device exited **Lost Mode**.
-
-The relationship between Lost Mode and the observed behavior has not been established as the root cause.
+## 6. Ambiente de Teste
+* **Dispositivo:** iPhone
+* **Sistema Operacional:** iOS (Preencher a versão exata, ex: iOS 17.5.1 / iOS 18.0)
+* **App:** Apple Wallet / Apple Pay
+* **Cartão Afetado:** PicPay Mastercard (final 7039) / Banco Inter (e outros cartões no stack)
 
 ---
 
-## Portfolio Context
+## 7. Evidências Visuais
+* **Captura de Tela:**
+  ![Banner de Verificação sem resposta](https://github.com/user-attachments/assets/SEU_LINK_DA_IMAGEM_AQUI)
 
-Bug report developed as part of a practical **QA portfolio**, based on exploratory testing performed on a real device.
+* **Gravação de Tela (Vídeo Demonstrativo):**
+  [Assistir ao vídeo de reprodução do bug sem resposta do botão](https://github.com/user-attachments/assets/SEU_LINK_DO_VIDEO_AQUI)

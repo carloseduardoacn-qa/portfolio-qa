@@ -1,4 +1,4 @@
-# [BUG] Botão "Enter Password" não responde ao toque e não exibe feedback visual na Apple Wallet após Modo Perdido
+# BR-002 - Botão "Enter Password" não responde ao toque e não exibe feedback visual na Apple Wallet após Modo Perdido
 
 ## 1. Descrição do Problema
 Ao tentar reativar os cartões na Apple Wallet após desativar o **Lost Mode** (Modo Perdido), a interface exibe a mensagem de alerta `"Apple Account Verification Required"`. No entanto, ao clicar no botão **"Enter Password"**, o aplicativo **não responde ao comando (unresponsive UI)**, não abre a tela de autenticação da Apple Account e **não exibe nenhuma mensagem de erro ou feedback ao usuário**, travando o fluxo de recuperação do Apple Pay.

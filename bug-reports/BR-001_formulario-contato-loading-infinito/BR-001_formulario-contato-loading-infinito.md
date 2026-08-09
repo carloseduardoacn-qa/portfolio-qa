@@ -162,7 +162,7 @@ Não foi possível determinar a causa raiz definitiva apenas pelos testes realiz
 | 04 | 📸 Screenshot | Aba Network com requisição de feedback em vermelho |
 | 05 | 📸 Screenshot | Headers da requisição — URL, método POST e status 500 |
 | 06 | 📸 Screenshot | Response da requisição — mensagem `internal_server_error` |
-| 07 | 🎥 Vídeo | Reprodução completa do bug (Loom) |
+| 07 | 🎥 Vídeo | [Reprodução completa do bug (Loom)]([https://www.loom.com/share/SEU-LINK-AQUI](https://www.loom.com/share/2eec57f1c8394f15b82d726757515230)) |
 | 08 | 📁 HAR File | `BR-001_formulario-contato-500.har` — captura da sessão de rede |
 
 ---

@@ -156,13 +156,13 @@ Não foi possível determinar a causa raiz definitiva apenas pelos testes realiz
 
 | # | Tipo | Descrição |
 |---|---|---|
-| 01 | 📸 Screenshot | Formulário preenchido antes do envio |
-| 02 | 📸 Screenshot | Loading infinito visível após clique em Enviar |
+| 01 | 📸 Screenshot | Formulário preenchido antes do envio (https://github.com/carloseduardoacn-qa/portfolio-qa/blob/main/bug-reports/BR-001_formulario-contato-loading-infinito/01-formulario-preenchido.png)|
+| 02 | 📸 Screenshot | Loading infinito visível após clique em Enviar https://github.com/carloseduardoacn-qa/portfolio-qa/blob/main/bug-reports/BR-001_formulario-contato-loading-infinito/02-loading-infinito.png|
 | 03 | 📸 Screenshot | Console com erro 500 destacado |
 | 04 | 📸 Screenshot | Aba Network com requisição de feedback em vermelho |
 | 05 | 📸 Screenshot | Headers da requisição — URL, método POST e status 500 |
 | 06 | 📸 Screenshot | Response da requisição — mensagem `internal_server_error` |
-| 07 | 🎥 Vídeo | [Reprodução completa do bug (Loom)](https://www.loom.com/share/2eec57f1c8394f15b82d726757515230) |
+| 07 | 🎥 Vídeo | [Reprodução completa do bug (Loom)] (https://www.loom.com/share/2eec57f1c8394f15b82d726757515230) |
 | 08 | 📁 HAR File | `BR-001_formulario-contato-500.har` — captura da sessão de rede |
 
 ---
